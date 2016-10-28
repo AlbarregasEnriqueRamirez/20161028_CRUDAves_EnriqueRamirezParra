@@ -1,0 +1,10 @@
+#surefire
+#Thu Oct 27 17:25:45 CEST 2016
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.1\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=C\:\\Users\\rpk19\\OneDrive\\Documentos\\NetBeansProjects\\PrimerosProyectos\\25102016_CRUDPollos_Enrique_Ramirez_Parra
+file.encoding=UTF-8
+localRepository=C\:\\Users\\rpk19\\.m2\\repository
+netbeans.deploy=true
+netbeans.deploy.debugmode=true
+netbeans.deploy.clientUrlPart=/MenuController
+basedir=C\:\\Users\\rpk19\\OneDrive\\Documentos\\NetBeansProjects\\PrimerosProyectos\\25102016_CRUDPollos_Enrique_Ramirez_Parra

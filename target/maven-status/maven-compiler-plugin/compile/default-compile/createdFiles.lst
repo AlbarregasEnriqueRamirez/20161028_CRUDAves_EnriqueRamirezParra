@@ -1,0 +1,4 @@
+es\albarregas\models\AccesoBD.class
+es\albarregas\beans\Ave.class
+es\albarregas\controllers\MenuController.class
+es\albarregas\controllers\InsertController.class
