@@ -38,15 +38,16 @@ public class MenuController extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             AccesoBD acceso = new AccesoBD();
        if(request.getParameter("accion").equals("1")){
-            
                 try {
-                  ResultSet  rs = acceso.ejecutarPreparada("SELECT * FROM aves");
+                 ResultSet  rs = acceso.ejecutarPreparada("SELECT * FROM aves");
                      request.setAttribute("listaAves", rs);
                 } catch (SQLException ex) {
                    //no accede a bd
                 }
           
-            request.getRequestDispatcher("jsp/RUD.jsp").forward(request, response); }
+           request.getRequestDispatcher("jsp/rud.jsp").forward(request, response);
+
+           }
            else request.getRequestDispatcher("jsp/Insert.jsp").forward(request, response);
         
         }

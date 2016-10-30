@@ -57,7 +57,7 @@ public class AccesoBD {
     */
     public ResultSet ejecutarPreparada(String sql) throws SQLException{
         if(conexion!=null){
-            return conexion.prepareStatement(sql).executeQuery();
+            return conexion.createStatement().executeQuery(sql);
         }
         return null;
     }

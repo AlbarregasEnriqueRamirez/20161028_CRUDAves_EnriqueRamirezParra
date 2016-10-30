@@ -18,7 +18,7 @@
         
      <ul>
               <!--select todos-->
-        <li><a href="MenuController?accion=1">Ver avistamientos</a></li>
+        <li><a href="MenuController?opcion=0&accion=1">Ver avistamientos</a></li>
             <!--update -->
         <li><a href="MenuController?opcion=1&accion=1">Modificar datos de un avistamiento</a></li>
             <!--delete-->

@@ -6,10 +6,13 @@
 
 <%@page import="java.sql.ResultSet"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%! ResultSet rs;%>
-<% rs = (ResultSet)request.getAttribute("listaAves");
-while(rs.next()){%>
-<input type="checkbox" name ='chk' value='<%=rs.getString("anilla")%>'>Especie: <%=rs.getString("especie")%> Lugar <%=rs.getString("lugar")%> Fecha <%=rs.getString("fecha")%>
+<%! ResultSet rstd;%>
+<% rstd = (ResultSet)request.getAttribute("listaAves");
+while(rstd.next()){%>
+<input type="checkbox" name ='chk' value='<%=rstd.getString("anilla")%>'>
+Especie: <%=rstd.getString("especie")%> 
+Lugar <%=rstd.getString("lugar")%> 
+Fecha <%=rstd.getString("fecha")%><br>
     
 <%}%>
 <input type="submit" value ="eliminar datos datos"/>

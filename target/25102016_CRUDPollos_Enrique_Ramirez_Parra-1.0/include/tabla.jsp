@@ -6,7 +6,7 @@
 
 <%@page import="java.sql.ResultSet"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+
 <table>
     <tr>
         <th> Anilla</th><th>Especie</th><th>Lugar</th><th>Fecha</th>
