@@ -43,6 +43,7 @@ public class MenuController extends HttpServlet {
                      request.setAttribute("listaAves", rs);
                 } catch (SQLException ex) {
                    //no accede a bd
+                   out.println("no accede bd");
                 }
           
            request.getRequestDispatcher("jsp/rud.jsp").forward(request, response);

@@ -4,16 +4,15 @@
     Author     : rpk19
 --%>
 
-<%@page import="java.sql.ResultSet"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-<%! ResultSet rstu;%>
-<% rstu = (ResultSet)request.getAttribute("listaAves");
-while(rstu.next()){%>
-<input type="radio" name ='rdb' value='<%=rstu.getString("anilla")%>'>
-Especie: <%=rstu.getString("especie")%>
-Lugar <%=rstu.getString("lugar")%>
-Fecha <%=rstu.getString("fecha")%><br>
+
+
+<%
+while(rs.next()){%>
+<input type="radio" name ='rdb' value='<%=rs.getString("anilla")%>'>
+Especie: <%=rs.getString("especie")%>
+Lugar <%=rs.getString("lugar")%>
+Fecha <%=rs.getString("fecha")%><br>
     
 <%}%>
 <input type="submit" value ="modificar datos"/>
