@@ -8,23 +8,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<%!ResultSet rs;%>
-<%rs = (ResultSet)request.getAttribute("listaAves");%>
+
 
     <%@include file = "../include/cabecera.jsp" %>
     <body>
         <article>
         
-            <!--Como siempre voy a mostrar la tabla, sea lo que sea lo que pida el user en este jsp,
-            la muestro directamente, despues mostrare lo que corresponda-->
-            <%@include file ="../include/tabla.jsp"%>
-            
-            
-            <% if (request.getParameter("opcion").equals("1")){%>
-                 <%@include file ="../include/update.jsp"%>
-            <%}else if(request.getParameter("opcion").equals("2")){%>
-             <%@include file ="../include/delete.jsp"%>
-            <%}%>
+    <%@include file ="../include/tabla.jsp"%>
         </article>
     </body>
 </html>
